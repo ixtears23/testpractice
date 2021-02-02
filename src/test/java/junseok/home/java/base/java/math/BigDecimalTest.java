@@ -35,4 +35,14 @@ public class BigDecimalTest {
         assertThat(BigDecimal.ZERO).isEqualByComparingTo(new BigDecimal(0));
     }
 
+    @Test
+    @DisplayName("BigDecimal Add Test")
+    public void bigDecimalAdd() {
+
+        BigDecimal oneDollar = new BigDecimal(1);
+        BigDecimal twoDollar = new BigDecimal(2);
+        BigDecimal threeDollar = new BigDecimal(3);
+
+        assertThat(oneDollar.add(twoDollar)).isEqualByComparingTo(threeDollar);
+    }
 }
