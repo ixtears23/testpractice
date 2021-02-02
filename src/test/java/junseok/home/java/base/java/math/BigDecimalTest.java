@@ -26,7 +26,7 @@ public class BigDecimalTest {
     @DisplayName("assertj의 isZero() 비교")
     public void zero00() {
         assertThat(BigDecimal.ZERO).isZero();
-        fail("쓸대없이 fail 발생!!");
+//        fail("쓸대없이 fail 발생!!");
     }
 
     @Test
